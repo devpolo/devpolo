@@ -66,7 +66,7 @@ const Container = styled.section`
 
       h1 {
         color: var(--white);
-        margin: 0;
+        margin: 0 0 0.1em 0;
       }
 
       h2 {
