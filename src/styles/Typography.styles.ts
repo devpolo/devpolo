@@ -30,7 +30,7 @@ export default css`
 
   ::selection {
     /* highlight text color */
-    /* background: var(); */
+    background: var(--yellow);
   }
 
   h1 {

@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
+import { EXTERNAL_GITHUB, EXTERNAL_LINKEDIN } from "~/constants/links"
 import { Page } from "~/elements/containers"
+
 import FlexLines from "../components/FlexLines"
 import Line from "../components/Line"
 
@@ -48,8 +50,12 @@ const HomePage = () => {
           <Line color='transparent' w={0} />
 
           <div className='social'>
-            <img src='/svg/github.svg' alt='' />
-            <img src='/svg/linkedin.svg' alt='' />
+            <a href={EXTERNAL_GITHUB} target='_blank'>
+              <img src='/svg/github.svg' alt='' />
+            </a>
+            <a href={EXTERNAL_LINKEDIN} target='_blank'>
+              <img src='/svg/linkedin.svg' alt='' />
+            </a>
           </div>
         </div>
       </Container>
