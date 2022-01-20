@@ -67,7 +67,6 @@ const HomePage = () => {
 const Container = styled.section`
   background: var(--dark);
   min-height: 100vh;
-  min-height: -webkit-fill-available;
   display: flex;
   justify-content: center;
   flex-direction: column;
