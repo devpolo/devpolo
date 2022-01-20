@@ -8,43 +8,73 @@ const HomePage = () => {
   return (
     <Page>
       <Container>
-        <Line color='green' />
-        <FlexLines>
-          <Line color='green' w={18} />
-          <Line color='gray' />
-        </FlexLines>
-        <FlexLines>
-          <Line color='green' />
-          <Line color='gray' w={7} />
-        </FlexLines>
-        <h1>Paul Crussaire</h1>
-        <h2>Freelance Developer</h2>
-        <Line color='yellow' w={45} />
-        <FlexLines>
-          <Line color='red' w={22} />
-          <Line color='gray' w={28} />
-        </FlexLines>
-        <Line color='gray' />
-        <FlexLines>
-          <Line color='purple' w={60} />
-          <Line color='gray' w={6} />
-        </FlexLines>
+        <div className='content'>
+          <FlexLines>
+            <Line color='green' />
+            <Line color='transparent' />
+          </FlexLines>
+          <FlexLines>
+            <Line color='green' w={18} />
+            <Line color='gray' />
+          </FlexLines>
+          <FlexLines>
+            <Line color='green' />
+            <Line color='gray' w={7} />
+            <Line color='transparent' w={6} />
+          </FlexLines>
+          <div className='introduction'>
+            <h1>Paul Crussaire</h1>
+            <h2>Freelance Developer</h2>
+          </div>
+          <FlexLines>
+            <Line color='yellow' w={45} />
+            <Line color='transparent' w={12} />
+          </FlexLines>
+          <FlexLines>
+            <Line color='red' w={22} />
+            <Line color='gray' w={28} />
+            <Line color='transparent' />
+          </FlexLines>
+          <FlexLines>
+            <Line color='gray' />
+            <Line color='transparent' w={6} />
+          </FlexLines>
+
+          <FlexLines>
+            <Line color='purple' w={60} />
+            <Line color='gray' w={6} />
+          </FlexLines>
+        </div>
       </Container>
     </Page>
   )
 }
 
 const Container = styled.section`
-  min-height: 100vh;
   background: var(--dark);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
-  h1 {
-    color: var(--white);
-  }
+  .content {
+    width: min(90%, 100rem);
+    margin: auto;
 
-  h2 {
-    color: var(--white);
-    font-weight: normal;
+    .introduction {
+      padding: 1em 0 2em 0;
+
+      h1 {
+        color: var(--white);
+        margin: 0;
+      }
+
+      h2 {
+        color: var(--white);
+        font-weight: normal;
+        margin: 0;
+      }
+    }
   }
 `
 
