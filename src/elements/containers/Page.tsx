@@ -1,6 +1,7 @@
 import { NextPage } from "next"
 
 import Head from "next/head"
+import { FULL_NAME } from "~/constants/text"
 
 const isProd = process.env.ENVIRONMENT === "prod"
 
@@ -16,7 +17,7 @@ const Page: NextPage<IPageProps> = ({
   noindex = false,
   nofollow = false,
 }) => {
-  const pageTitle = title ? `Paul Crussaire | ${title}` : "Paul Crussaire"
+  const pageTitle = title ? `${FULL_NAME} | ${title}` : FULL_NAME
   const index = noindex ? "noindex" : "index"
   const follow = nofollow ? "nofollow" : "follow"
   const content = isProd ? `${index}, ${follow}` : "noindex, nofollow"

@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 import { EXTERNAL_GITHUB, EXTERNAL_LINKEDIN } from "~/constants/links"
+import { FULL_NAME } from "~/constants/text"
 import { Page } from "~/elements/containers"
 
 import FlexLines from "../components/FlexLines"
@@ -8,7 +9,7 @@ import Line from "../components/Line"
 
 const HomePage = () => {
   return (
-    <Page>
+    <Page title='Freelance Developer'>
       <Container>
         <div className='content'>
           <FlexLines>
@@ -25,7 +26,7 @@ const HomePage = () => {
             <Line color='transparent' w={6} />
           </FlexLines>
           <div className='introduction'>
-            <h1>Paul Crussaire</h1>
+            <h1>{FULL_NAME}</h1>
             <h2>Freelance Developer</h2>
           </div>
           <FlexLines>
