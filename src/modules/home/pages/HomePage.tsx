@@ -91,10 +91,10 @@ const Container = styled.section`
     }
 
     .social {
-      bottom: 1em;
+      /* bottom: 1em;
       position: fixed;
       width: 100%;
-      overflow: hidden;
+      overflow: hidden; */
 
       img {
         height: 5rem;
