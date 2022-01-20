@@ -13,10 +13,10 @@ const Line = (props: ILine) => {
 
 const Container = styled.div<ILine>`
   background-color: ${(props) => `var(--${props.color || "gray"})`};
-  height: 1rem;
   width: ${(props) => `${props.w || 32}rem`};
-
-  margin: 0 1rem 1rem 0;
+  height: 1em;
+  margin: 0 1.2em 1.2em 0;
+  border-radius: 1em;
 `
 
 export default Line
