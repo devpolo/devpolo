@@ -44,6 +44,13 @@ const HomePage = () => {
             <Line color='purple' w={60} />
             <Line color='gray' w={6} />
           </FlexLines>
+          <Line color='transparent' w={0} />
+          <Line color='transparent' w={0} />
+
+          <div className='social'>
+            <img src='/svg/github.svg' alt='' />
+            <img src='/svg/linkedin.svg' alt='' />
+          </div>
         </div>
       </Container>
     </Page>
@@ -59,7 +66,7 @@ const Container = styled.section`
 
   .content {
     width: min(90%, 100rem);
-    margin: auto;
+    margin: 10rem auto;
 
     .introduction {
       padding: 1em 0 2em 0;
@@ -73,6 +80,24 @@ const Container = styled.section`
         color: var(--white);
         font-weight: normal;
         margin: 0;
+      }
+    }
+
+    .social {
+      bottom: 1em;
+      position: fixed;
+      width: 100%;
+      overflow: hidden;
+
+      img {
+        height: 5rem;
+        width: 5rem;
+        margin-right: 2rem;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.8;
+        }
       }
     }
   }
