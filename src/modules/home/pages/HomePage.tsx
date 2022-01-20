@@ -1,7 +1,9 @@
 import type { NextPage } from "next"
 
-const HomePage: NextPage = () => {
-  return <div></div>
+import { Page } from "~/elements/containers"
+
+const HomePage = () => {
+  return <Page></Page>
 }
 
 export default HomePage
