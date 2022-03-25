@@ -73,6 +73,7 @@ const Container = styled.section`
 
   .content {
     width: min(90%, 100rem);
+    overflow: hidden;
     margin: 10rem auto;
 
     .introduction {
