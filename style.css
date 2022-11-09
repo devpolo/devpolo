@@ -141,6 +141,7 @@ ol ol {
 section {
   background: var(--dark);
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   -webkit-box-pack: center;
   display: flex;
   justify-content: center;
