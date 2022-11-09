@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@300;700&display=swap");
+
+:root {
+  /* link: https://utopia.fyi/type/calculator?c=320,21,1.2,1140,24,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l */
+
+  --step--2: clamp(0.91rem, 0.89rem + 0.1vw, 0.96rem);
+  --step--1: clamp(1.09rem, 1.05rem + 0.21vw, 1.2rem);
+  --step-0: clamp(1.31rem, 1.24rem + 0.37vw, 1.5rem);
+  --step-1: clamp(1.58rem, 1.46rem + 0.59vw, 1.88rem);
+  --step-2: clamp(1.89rem, 1.71rem + 0.89vw, 2.34rem);
+  --step-3: clamp(2.27rem, 2.01rem + 1.29vw, 2.93rem);
+  --step-4: clamp(2.72rem, 2.36rem + 1.83vw, 3.66rem);
+  --step-5: clamp(3.27rem, 2.75rem + 2.56vw, 4.58rem);
+
+  --black: #000;
+  --white: #fff;
+  --transparent: transparent;
+  --gray: #4d616e;
+  --dark: #24292e;
+  --green: #56b3b4;
+  --yellow: #f7ba3e;
+  --red: #ea5e5e;
+  --purple: #bf85bf;
+}
+
+/* RESET */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  word-break: break-all;
+  line-height: 1.4;
+}
+
+html {
+  /* 1rem = 10px; */
+  font-size: 62.5%;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+/* font imported in HTML */
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  line-height: normal;
+  color: var(--black);
+  font-size: var(--step-0);
+  box-sizing: border-box;
+  background: var(--dark);
+}
+
+body * {
+  word-break: break-word;
+}
+
+::selection {
+  /* highlight text color */
+  background: var(--yellow);
+}
+
+h1 {
+  font-weight: 500;
+  line-height: 1.1em;
+  margin: 0 0 0.8em 0;
+  font-family: "Poppins", sans-serif;
+  font-size: var(--step-5);
+  color: var(--black);
+  word-break: break-word;
+}
+
+h1 * {
+  line-height: 1.1em;
+}
+
+h2,
+h3,
+h4 {
+  margin: 0 0 1em 0;
+}
+
+h2 {
+  font-size: var(--step-2);
+}
+
+h3 {
+  font-size: var(--step-1);
+}
+
+h4 {
+  font-size: var(--step-0);
+}
+
+p {
+  font-size: var(--step-0);
+  margin: 0;
+  line-height: 1.5em;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+a {
+  color: #146eeb;
+}
+
+button {
+  word-break: break-word;
+}
+
+ul,
+ol {
+  margin: 0.5rem 0 1rem;
+  padding-inline-start: 2rem;
+  list-style-type: none;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin: 0;
+}
+
+/* a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+} */
+
+/* CSS */
+
+section {
+  background: var(--dark);
+  min-height: 100vh;
+  -webkit-box-pack: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content {
+  width: min(90%, 100rem);
+  overflow: hidden;
+  margin: 10rem auto;
+}
+
+.content .introduction {
+  padding: 1em 0 2em 0;
+}
+
+.content .introduction h1 {
+  color: var(--white);
+  margin: 0 0 0.1em 0;
+}
+
+.content .introduction h2 {
+  color: var(--white);
+  font-weight: normal;
+  margin: 0;
+}
+
+.lines-group {
+  display: flex;
+}
+
+.line {
+  background-color: var(--gray);
+  width: 32rem;
+  margin: 0 1.2em 1.2em 0;
+  height: 1em;
+  border-radius: 1em;
+}
+
+.content .social img {
+  height: 5rem;
+  width: 5rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.content .social img:hover {
+  opacity: 0.8;
+}
+
+.content .social a {
+  color: var(--transparent);
+}
+
+/* CLASSES */
+
+.bg-red {
+  background-color: var(--red);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.bg-gray {
+  background-color: var(--gray);
+}
+
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-transparent {
+  background-color: var(--transparent);
+}
+
+.w-1 {
+  width: 1rem;
+}
+
+.w-18 {
+  width: 18rem;
+}
+.w-7 {
+  width: 7rem;
+}
+.w-6 {
+  width: 6rem;
+}
+.w-45 {
+  width: 45rem;
+}
+.w-12 {
+  width: 12rem;
+}
+.w-22 {
+  width: 22rem;
+}
+.w-28 {
+  width: 28rem;
+}
+.w-60 {
+  width: 60rem;
+}
+.w-0 {
+  width: 0;
+}
