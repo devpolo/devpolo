@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/dydy_le_kiwi",
+      "destination": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "permanent": false
+    }
+  ]
+}
